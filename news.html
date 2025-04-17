@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>WINGS OF AERO</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+    <header class="navbar">
+        <div class="container">
+          <div class="logo">✈️ WINGS OF AERO</div>
+    
+          <nav class="nav-links">
+            <!-- Home Dropdown -->
+            <div class="dropdown">
+              <a href="index.html">Home ▸</a>
+              <div class="dropdown-menu">
+                <a href="news.html">Latest News</a>
+                <div class="dropdown-submenu">
+                  <a href="#">Employee Corner ▸</a>
+                  <div class="dropdown-menu">
+                    <a href="#">Employee Mail Login</a>
+                    <a href="#">Employee Time Tracker/Attendance</a>
+                    <a href="#">Employee Time Off/Leave Application</a>
+                    <a href="#">Employee Travel Expense Request</a>
+                    <a href="#">Task, Report/Presentation/Video Submission</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+            <!---<a href="#">About</a>----->
+    
+            <!-- Services Dropdown -->
+            <div class="dropdown">
+              <a href="services.html">Services ▸</a>
+              <div class="dropdown-menu">
+                <div class="dropdown-submenu">
+                  <a href="service1.html">Aerospace Vehicle Design ▸</a>
+                  <div class="dropdown-menu">
+                    <a href="service1.html">Aircrafts</a>
+                    <a href="service1.html">Rocket Design</a>
+                    <a href="service1.html">Drone Design</a>
+                  </div>
+                </div>
+    
+                <a href="service1.html">Aerospace Vehicle Analysis</a>
+    
+                <div class="dropdown-submenu">
+                  <a href="service1.html">Aerospace Vehicle Manufacturing ▸</a>
+                  <div class="dropdown-menu">
+                    <a href="service1.html">Composite Materials</a>
+                    <div class="dropdown-submenu">
+                      <a href="service1.html">3D Printed Prototypes ▸</a>
+                      <div class="dropdown-menu">
+                        <a href="service1.html">Airfoils 3D Printed</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+    
+                <a href="service1.html">Aerospace Vehicle Flight Testing</a>
+                <a href="service1.html">Outreach Program</a>
+              </div>
+            </div>
+    
+            <a href="products.html">Products</a>
+            <a href="careers.html">Careers</a>
+            <a href="contact.html">Contact</a>
+          </nav>
+    
+          <button class="cta">Get in Touch</button>
+    
+          <div class="cart-icon">
+            <a href="#"><i class="fas fa-shopping-cart"></i></a>
+          </div>
+    
+          <div class="dark-mode-toggle">
+            <input type="checkbox" id="dark-toggle">
+            <label for="dark-toggle">🌙</label>
+          </div>
+        </div>
+      </header>
+
+  <!-- hero section --------------------------------------------->
+  <section class="latest-news" id="news">
+    <div class="section-title">
+      <h2>Latest News</h2>
+    </div>
+  
+    <div class="news-container">
+  
+      <!-- News Item 1 -->
+      <div class="news-item" data-aos="fade-up">
+        <h3>Blue Origin's Historic All-Female Spaceflight</h3>
+        <p class="date">April 14, 2025 - Source: Wikipedia</p>
+        <p class="summary">
+          Blue Origin's New Shepard NS-31 mission marked a significant milestone with an all-female crew, including Katy Perry, Gayle King, and Lauren Sánchez. The 10-minute suborbital flight from Texas showcased advancements in commercial space tourism and diversity in space exploration.
+        </p>
+        <a href="#" class="read-more">Read More</a>
+        <button class="comment-btn" onclick="toggleComment(this)">Leave a Comment</button>
+        <div class="comment-box" style="display: none;">
+          <textarea placeholder="Write your comment..."></textarea>
+          <button class="post-comment">Post Comment</button>
+        </div>
+      </div>
+  
+      <!-- News Item 2 -->
+      <div class="news-item" data-aos="fade-up">
+        <h3>Northrop Grumman Advances in DARPA's MELT Program</h3>
+        <p class="date">April 2025 - Source: Aviation Week</p>
+        <p class="summary">
+          Northrop Grumman has progressed to Phase 2 of DARPA's Modular Efficient Laser Technology (MELT) program. This initiative aims to develop advanced laser systems for defense applications, highlighting the company's commitment to cutting-edge aerospace technologies.
+        </p>
+        <a href="#" class="read-more">Read More</a>
+        <button class="comment-btn" onclick="toggleComment(this)">Leave a Comment</button>
+        <div class="comment-box" style="display: none;">
+          <textarea placeholder="Write your comment..."></textarea>
+          <button class="post-comment">Post Comment</button>
+        </div>
+      </div>
+  
+      <!-- News Item 3 -->
+      <div class="news-item" data-aos="fade-up">
+        <h3>Dawn Aerospace's Suborbital Flight Collaboration</h3>
+        <p class="date">April–June 2025 - Source: Dawn Aerospace</p>
+        <p class="summary">
+          Dawn Aerospace is set to conduct suborbital flights of its Mk-II Aurora vehicle in April and June 2025 from New Zealand. These missions, in collaboration with a leading U.S. university, will demonstrate the vehicle's capabilities and support commercial payloads.
+        </p>
+        <a href="#" class="read-more">Read More</a>
+        <button class="comment-btn" onclick="toggleComment(this)">Leave a Comment</button>
+        <div class="comment-box" style="display: none;">
+          <textarea placeholder="Write your comment..."></textarea>
+          <button class="post-comment">Post Comment</button>
+        </div>
+      </div>
+  
+      <!-- News Item 4 -->
+      <div class="news-item" data-aos="fade-up">
+        <h3>Airbus Nears Acquisition of Spirit AeroSystems Assets</h3>
+        <p class="date">April 2025 - Source: Reuters</p>
+        <p class="summary">
+          Airbus expects to finalize the acquisition of certain Spirit AeroSystems operations by the end of April 2025. This strategic move aims to enhance Airbus's manufacturing capabilities and address supply chain challenges in the aerospace sector.
+        </p>
+        <a href="#" class="read-more">Read More</a>
+        <button class="comment-btn" onclick="toggleComment(this)">Leave a Comment</button>
+        <div class="comment-box" style="display: none;">
+          <textarea placeholder="Write your comment..."></textarea>
+          <button class="post-comment">Post Comment</button>
+        </div>
+      </div>
+  
+      <!-- News Item 5 -->
+      <div class="news-item" data-aos="fade-up">
+        <h3>China Suspends Boeing Jet Imports Amid Trade Tensions</h3>
+        <p class="date">April 2025 - Source: Reuters</p>
+        <p class="summary">
+          In response to escalating trade disputes, China has halted imports of Boeing aircraft, affecting deliveries to major airlines. This decision underscores the impact of geopolitical factors on the global aerospace industry.
+        </p>
+        <a href="#" class="read-more">Read More</a>
+        <button class="comment-btn" onclick="toggleComment(this)">Leave a Comment</button>
+        <div class="comment-box" style="display: none;">
+          <textarea placeholder="Write your comment..."></textarea>
+          <button class="post-comment">Post Comment</button>
+        </div>
+      </div>
+  
+      <!-- News Item 6 -->
+      <div class="news-item" data-aos="fade-up">
+        <h3>BOC Aviation Places Record Order for Airbus A320neo</h3>
+        <p class="date">April 2025 - Source: gtma.co.uk</p>
+        <p class="summary">
+          BOC Aviation has placed a firm order for 70 Airbus A320neo family aircraft, marking the largest backlog in its history with Airbus. This order reflects strong demand for fuel-efficient, narrow-body aircraft in the commercial aviation market.
+        </p>
+        <a href="#" class="read-more">Read More</a>
+        <button class="comment-btn" onclick="toggleComment(this)">Leave a Comment</button>
+        <div class="comment-box" style="display: none;">
+          <textarea placeholder="Write your comment..."></textarea>
+          <button class="post-comment">Post Comment</button>
+        </div>
+      </div>
+  
+      <!-- News Item 7 -->
+      <div class="news-item" data-aos="fade-up">
+        <h3>Brazil to Deliver A-29 Super Tucano Aircraft to Paraguay</h3>
+        <p class="date">April 2025 - Source: Home</p>
+        <p class="summary">
+          Brazil is set to deliver the first two Embraer A-29 Super Tucano light attack aircraft to the Paraguayan Air Force. This delivery signifies strengthening defense ties and the expansion of Embraer's footprint in Latin America.
+        </p>
+        <a href="#" class="read-more">Read More</a>
+        <button class="comment-btn" onclick="toggleComment(this)">Leave a Comment</button>
+        <div class="comment-box" style="display: none;">
+          <textarea placeholder="Write your comment..."></textarea>
+          <button class="post-comment">Post Comment</button>
+        </div>
+      </div>
+  
+      <!-- News Item 8 -->
+      <div class="news-item" data-aos="fade-up">
+        <h3>XTI Aerospace Advances Towards FAA Certification</h3>
+        <p class="date">April 2025 - Source: XTI Aerospace</p>
+        <p class="summary">
+          XTI Aerospace has reported significant progress in aircraft design and intellectual property development, setting the stage for pre-orders and advancement towards FAA certification in 2025. This highlights the company’s innovation in VTOL aircraft.
+        </p>
+        <a href="#" class="read-more">Read More</a>
+        <button class="comment-btn" onclick="toggleComment(this)">Leave a Comment</button>
+        <div class="comment-box" style="display: none;">
+          <textarea placeholder="Write your comment..."></textarea>
+          <button class="post-comment">Post Comment</button>
+        </div>
+      </div>
+  
+    </div>
+  </section>
+
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <p>Copyright © 2025 <strong>Wings of Aero</strong> | Powered by <strong>TEMS TECH SOLUTIONS</strong></p>
+    </div>
+  </footer>
+  
+
+    
+
+  
+  
+
+  <script src="script.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,
+    once: true
+  });
+</script>
+
+</body>
+</html>
